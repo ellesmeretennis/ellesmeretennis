@@ -4,12 +4,35 @@
 <meta name="viewport" content="width=480">
 <title>Ellesmere Box Leagues 2020</title>
 <style>
-body { width: 480px; }
+body {
+	margin: 0;
+	width: 480px;
+	font-family: Verdana, Arial;
+}
+div#main { position: relative; }
+div#first{
+	background-image: url('tennis_ball.jpg');
+	background-size: contain;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	opacity: 0.18;
+	width: 480px;
+	min-height: 100vh;
+}
+div#second{
+position: absolute;
+top: 0;
+left: 0;
+margin: 5px;
+}
 table { width: 450px; }
 td:last-child { text-align: right; }
 </style>
 </head>
 <body>
+<div id="main">
+<div id="first"></div>
+<div id="second">
 <h2>Box 1</h2>
 Andy Westmoreland<br>
 John Nuttall<br>
@@ -50,5 +73,7 @@ Mark Morris<br>
 <td></td>
 </tr>
 </table>
+</div>
+</div>
 </body>
 </html>
